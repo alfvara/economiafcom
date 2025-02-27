@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juego educativo de economía</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="startScreen">
+    <h1>Juego educativo de Economía</h1>
+    <p>Tendrás 15 segundos por pregunta. ¡Intenta responder correctamente tantas como puedas!</p>
+    <button id="startBtn">Comenzar juego</button>
+  </div>
+
+  <div id="gameContainer" style="display:none;">
+    <div class="infoBar">
+      <div id="scoreBoard">Puntuación: <span id="score">0</span></div>
+      <div id="timer">Tiempo: <span id="time">15</span>s</div>
+    </div>
+    <div id="questionContainer">
+      <p id="questionText"></p>
+      <div id="optionsContainer"></div>
+    </div>
+  </div>
+
+  <div id="roundComplete" style="display:none;">
+    <p>¡Ronda 1 completada! Puntuación actual: <span id="scoreSoFar"></span></p>
+    <p>¿Deseas continuar a la segunda ronda o finalizar el juego?</p>
+    <button id="continueBtn">Continuar</button>
+    <button id="finishBtn">Finalizar</button>
+  </div>
+
+  <div id="finalResult" style="display:none;">
+    <p>Juego finalizado. Puntuación final: <span id="finalScore"></span></p>
+    <p>Nivel de desempeño: <span id="performanceLevel"></span></p>
+    <button id="restartBtn">Jugar de nuevo</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

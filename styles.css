@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.infoBar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    padding: 0 20px;
+}
+
+#timer {
+    color: #d32f2f; /* rojo oscuro para indicar urgencia en el tiempo */
+}
+
+#scoreBoard {
+    color: #000;
+}
+
+#questionText {
+    font-size: 1.2em;
+    margin: 20px;
+}
+
+#optionsContainer button {
+    display: block;
+    width: 60%;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: left;
+}
+
+.correct {
+    background-color: #c8e6c9; /* verde claro para respuesta correcta */
+}
+
+.incorrect {
+    background-color: #ffcdd2; /* rojo claro para respuesta incorrecta */
+}
+
+#roundComplete, #finalResult {
+    margin: 20px;
+}
+
+#roundComplete p, #finalResult p {
+    font-size: 1.1em;
+}
+
+#performanceLevel.perf-advanced {
+    color: green;
+    font-weight: bold;
+}
+#performanceLevel.perf-basic {
+    color: orange;
+    font-weight: bold;
+}
+#performanceLevel.perf-improve {
+    color: red;
+    font-weight: bold;
+}
