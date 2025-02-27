@@ -1,121 +1,76 @@
-/* Estilos generales */
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #ffffff;
-  color: #333;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-/* Contenedor genérico para las pantallas */
-.screen {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Encabezados */
-h1, h2 {
-  color: #800000;  /* Color granate para títulos */
-}
-
-/* Texto de instrucciones en pantalla de inicio */
-#start-screen p {
-  font-size: 1.1em;
-  margin-bottom: 1.5em;
-}
-
-/* Selector de nivel de dificultad */
-.difficulty-select {
-  margin: 1em 0;
-  font-size: 1.1em;
-}
-.difficulty-select select {
-  padding: 5px;
-  font-size: 1em;
-}
-
-/* Botones generales */
 button {
-  background-color: #800000;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1em;
-  cursor: pointer;
-  border-radius: 5px;
-  margin: 10px;
-}
-button:hover {
-  background-color: #5f0000; /* tono más oscuro al pasar el mouse */
-}
-button:disabled {
-  background-color: #999;
-  cursor: default;
-}
-
-/* Pregunta */
-#question {
-  font-size: 1.3em;
-  margin-bottom: 1em;
-}
-
-/* Opciones de respuesta */
-#options {
-  text-align: left;
-  margin: 0 auto;
-  display: inline-block;
-}
-#options label {
-  display: block;
-  margin: 8px 0;
-  cursor: pointer;
-  font-size: 1.1em;
-}
-#options input[type="radio"] {
-  margin-right: 8px;
-}
-
-/* Estilos para la explicación y retroalimentación de respuestas */
-#explanation {
-  font-size: 0.95em;
-  padding: 10px;
-  border: 1px solid #ccc;
-  background-color: #f9f9f9;
-  text-align: left;
-  border-radius: 5px;
-}
-
-/* Colores para mensajes de correcto/incorrecto */
-.correct {
-  color: green;
-  font-weight: bold;
-}
-.incorrect {
-  color: red;
-  font-weight: bold;
-}
-
-/* Pantalla de resultados */
-#result-screen p {
-  font-size: 1.1em;
-  margin: 0.5em 0;
-}
-
-/* Responsive: Ajustes para pantallas pequeñas */
-@media (max-width: 600px) {
-  body {
-    font-size: 0.95em;
-  }
-  .screen {
-    margin: 20px auto;
-    padding: 15px;
-  }
-  #options label {
+    padding: 10px 20px;
     font-size: 1em;
-  }
-  button {
-    width: 100%;
-    margin: 8px 0;
-  }
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.infoBar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    padding: 0 20px;
+}
+
+#timer {
+    color: #d32f2f; /* rojo oscuro para indicar urgencia en el tiempo */
+}
+
+#scoreBoard {
+    color: #000;
+}
+
+#questionText {
+    font-size: 1.2em;
+    margin: 20px;
+}
+
+#optionsContainer button {
+    display: block;
+    width: 60%;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: left;
+}
+
+.correct {
+    background-color: #c8e6c9; /* verde claro para respuesta correcta */
+}
+
+.incorrect {
+    background-color: #ffcdd2; /* rojo claro para respuesta incorrecta */
+}
+
+#roundComplete, #finalResult {
+    margin: 20px;
+}
+
+#roundComplete p, #finalResult p {
+    font-size: 1.1em;
+}
+
+#performanceLevel.perf-advanced {
+    color: green;
+    font-weight: bold;
+}
+#performanceLevel.perf-basic {
+    color: orange;
+    font-weight: bold;
+}
+#performanceLevel.perf-improve {
+    color: red;
+    font-weight: bold;
 }

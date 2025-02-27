@@ -3,46 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quiz Economía Básica</title>
-  <!-- Enlace al archivo de estilos CSS -->
+  <title>Juego educativo de economía</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div id="startScreen">
+    <h1>Juego educativo de Economía</h1>
+    <p>Tendrás 15 segundos por pregunta. ¡Intenta responder correctamente tantas como puedas!</p>
+    <button id="startBtn">Comenzar juego</button>
+  </div>
 
-  <!-- Pantalla de Inicio / Bienvenida -->
-  <div id="start-screen" class="screen">
-    <h1>Quiz: Economía Básica para Comunicadores</h1>
-    <p>Bienvenido. Pon a prueba tus conocimientos de economía básica. Selecciona un nivel de dificultad para comenzar.</p>
-    <div class="difficulty-select">
-      <label for="difficulty">Nivel de dificultad:</label>
-      <select id="difficulty">
-        <option value="basic">Básico</option>
-        <option value="intermediate">Intermedio</option>
-        <option value="advanced">Avanzado</option>
-      </select>
+  <div id="gameContainer" style="display:none;">
+    <div class="infoBar">
+      <div id="scoreBoard">Puntuación: <span id="score">0</span></div>
+      <div id="timer">Tiempo: <span id="time">15</span>s</div>
     </div>
-    <button id="start-btn">Comenzar</button>
+    <div id="questionContainer">
+      <p id="questionText"></p>
+      <div id="optionsContainer"></div>
+    </div>
   </div>
 
-  <!-- Pantalla del Quiz (Preguntas y opciones) -->
-  <div id="quiz-screen" class="screen" style="display:none;">
-    <h2 id="question"></h2>
-    <div id="options"></div>
-    <!-- Contenedor para la explicación después de responder -->
-    <div id="explanation" style="display:none; margin-top: 10px;"></div>
-    <button id="submit-btn">Responder</button>
-    <button id="next-btn" style="display:none;">Siguiente</button>
+  <div id="roundComplete" style="display:none;">
+    <p>¡Ronda 1 completada! Puntuación actual: <span id="scoreSoFar"></span></p>
+    <p>¿Deseas continuar a la segunda ronda o finalizar el juego?</p>
+    <button id="continueBtn">Continuar</button>
+    <button id="finishBtn">Finalizar</button>
   </div>
 
-  <!-- Pantalla de Resultados -->
-  <div id="result-screen" class="screen" style="display:none;">
-    <h2>Resultados del Quiz</h2>
-    <p id="score-text"></p>
-    <p id="feedback-text"></p>
-    <button id="restart-btn">Volver a inicio</button>
+  <div id="finalResult" style="display:none;">
+    <p>Juego finalizado. Puntuación final: <span id="finalScore"></span></p>
+    <p>Nivel de desempeño: <span id="performanceLevel"></span></p>
+    <button id="restartBtn">Jugar de nuevo</button>
   </div>
 
-  <!-- Inclusión del archivo JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
