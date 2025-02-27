@@ -1,8 +1,6 @@
 // script.js para el juego de Economía y Finanzas
-  
-// Preguntas del juego (80 en total, 20 por cada tema indicado). 
+ // Preguntas del juego (80 en total, 20 por cada tema indicado). 
 // Todas las preguntas están unificadas en un solo conjunto (sin niveles de dificultad).
-
 const questions = [
     {
         question: "¿Qué estudia la macroeconomía en contraste con la microeconomía?",
