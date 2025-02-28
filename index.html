@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Economía Básica</title>
+                                <meta name="description" content="Juego de preguntas de opción múltiple sobre economía básica para poner a prueba tus conocimientos.">
+                                <meta name="keywords" content="economía, juego, preguntas, trivial, macroeconomía, finanzas, educación">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Juego de Economía Básica</h1>
+        <p style="text-align: center;">Pon a prueba tus conocimientos de economía con este juego de preguntas de opción múltiple.</p>
+        
+        <div class="progress-bar">
+            <div class="progress" id="progress">0%</div>
+        </div>
+        
+        <div id="questionContainer">
+            <!-- Pregunta 1 -->
+            <div class="question active" id="question1">
+                <h3>1. ¿Qué es la oferta y la demanda?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(1, 1)">A) Un concepto que solo aplica a bienes de lujo</div>
+                    <div class="option" onclick="checkAnswer(1, 2)">B) Un modelo que explica la determinación de precios en el mercado</div>
+                    <div class="option" onclick="checkAnswer(1, 3)">C) Un sistema para regular los monopolios</div>
+                    <div class="option" onclick="checkAnswer(1, 4)">D) Una teoría sobre el comportamiento de los bancos centrales</div>
+                </div>
+                <div class="explanation" id="explanation1">
+                    <strong>Respuesta correcta: B) Un modelo que explica la determinación de precios en el mercado</strong>
+                    <p>La ley de la oferta y la demanda es un modelo económico fundamental que describe cómo el precio de un bien o servicio es determinado por la interacción entre la disponibilidad del producto (oferta) y el deseo de adquirirlo (demanda). Cuando la demanda aumenta y la oferta se mantiene constante, los precios tienden a subir. Cuando la oferta aumenta y la demanda se mantiene constante, los precios tienden a bajar.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 2 -->
+            <div class="question" id="question2">
+                <h3>2. ¿Qué es el PIB (Producto Interno Bruto)?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(2, 1)">A) La suma de todos los impuestos recaudados en un país</div>
+                    <div class="option" onclick="checkAnswer(2, 2)">B) El valor total de la deuda de un país</div>
+                    <div class="option" onclick="checkAnswer(2, 3)">C) El valor total de bienes y servicios producidos en un país durante un período</div>
+                    <div class="option" onclick="checkAnswer(2, 4)">D) La diferencia entre exportaciones e importaciones</div>
+                </div>
+                <div class="explanation" id="explanation2">
+                    <strong>Respuesta correcta: C) El valor total de bienes y servicios producidos en un país durante un período</strong>
+                    <p>El Producto Interno Bruto (PIB) es un indicador económico que mide el valor monetario de todos los bienes y servicios finales producidos dentro de las fronteras de un país en un período específico, generalmente un año. Es utilizado para evaluar el tamaño y crecimiento de la economía de un país. Un aumento en el PIB indica crecimiento económico, mientras que una disminución puede señalar una recesión.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 3 -->
+            <div class="question" id="question3">
+                <h3>3. ¿Qué es la inflación?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(3, 1)">A) El aumento generalizado y sostenido de los precios de bienes y servicios</div>
+                    <div class="option" onclick="checkAnswer(3, 2)">B) La disminución del valor de la moneda de un país</div>
+                    <div class="option" onclick="checkAnswer(3, 3)">C) El aumento de la tasa de interés establecida por el banco central</div>
+                    <div class="option" onclick="checkAnswer(3, 4)">D) El incremento en el desempleo de un país</div>
+                </div>
+                <div class="explanation" id="explanation3">
+                    <strong>Respuesta correcta: A) El aumento generalizado y sostenido de los precios de bienes y servicios</strong>
+                    <p>La inflación es el aumento generalizado y sostenido de los precios de bienes y servicios en una economía durante un período de tiempo. Cuando hay inflación, cada unidad de moneda compra menos bienes y servicios que antes, lo que significa una pérdida del poder adquisitivo del dinero. La inflación es medida normalmente por el índice de precios al consumidor (IPC) y es controlada por los bancos centrales mediante políticas monetarias.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 4 -->
+            <div class="question" id="question4">
+                <h3>4. ¿Qué es un monopolio?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(4, 1)">A) Un mercado con muchos compradores y vendedores</div>
+                    <div class="option" onclick="checkAnswer(4, 2)">B) Una empresa que domina completamente un mercado específico</div>
+                    <div class="option" onclick="checkAnswer(4, 3)">C) Un sistema donde el gobierno controla toda la economía</div>
+                    <div class="option" onclick="checkAnswer(4, 4)">D) Un mercado donde solo existen dos empresas competidoras</div>
+                </div>
+                <div class="explanation" id="explanation4">
+                    <strong>Respuesta correcta: B) Una empresa que domina completamente un mercado específico</strong>
+                    <p>Un monopolio es una estructura de mercado donde una sola empresa o entidad domina completamente la oferta de un producto o servicio, sin competidores significativos. Esta posición dominante permite al monopolista influir significativamente en el precio del bien o servicio, generalmente manteniéndolo más alto de lo que sería en un mercado competitivo. Los monopolios son generalmente regulados por leyes antimonopolio para proteger a los consumidores.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 5 -->
+            <div class="question" id="question5">
+                <h3>5. ¿Qué es el desempleo en economía?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(5, 1)">A) La cantidad de personas que trabajan a tiempo parcial</div>
+                    <div class="option" onclick="checkAnswer(5, 2)">B) El porcentaje de la población que no quiere trabajar</div>
+                    <div class="option" onclick="checkAnswer(5, 3)">C) La situación en la que hay personas en edad de trabajar que buscan empleo activamente pero no lo encuentran</div>
+                    <div class="option" onclick="checkAnswer(5, 4)">D) La proporción de personas que están jubiladas</div>
+                </div>
+                <div class="explanation" id="explanation5">
+                    <strong>Respuesta correcta: C) La situación en la que hay personas en edad de trabajar que buscan empleo activamente pero no lo encuentran</strong>
+                    <p>El desempleo se refiere a la situación económica en la que personas en edad de trabajar, que están buscando empleo activamente, no pueden encontrar trabajo. La tasa de desempleo es un indicador importante de la salud económica de un país. Un alto nivel de desempleo indica que la economía no está utilizando eficientemente sus recursos humanos y puede ser síntoma de problemas económicos más profundos, como una recesión.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 6 -->
+            <div class="question" id="question6">
+                <h3>6. ¿Qué es el mercado de valores?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(6, 1)">A) Un lugar físico donde se compran y venden productos agrícolas</div>
+                    <div class="option" onclick="checkAnswer(6, 2)">B) Un sistema donde se negocian acciones de empresas y otros valores financieros</div>
+                    <div class="option" onclick="checkAnswer(6, 3)">C) Una institución que ofrece préstamos a bajas tasas de interés</div>
+                    <div class="option" onclick="checkAnswer(6, 4)">D) Un organismo gubernamental que regula los precios de los bienes básicos</div>
+                </div>
+                <div class="explanation" id="explanation6">
+                    <strong>Respuesta correcta: B) Un sistema donde se negocian acciones de empresas y otros valores financieros</strong>
+                    <p>El mercado de valores es un tipo de mercado de capitales donde se negocian valores financieros como acciones de empresas, bonos, fondos cotizados (ETFs), entre otros. Estos mercados facilitan la compra y venta de estos instrumentos entre inversionistas, empresas e instituciones. Las bolsas de valores, como la Bolsa de Nueva York o la Bolsa Mexicana de Valores, son ejemplos de mercados de valores organizados. El mercado de valores es importante porque permite a las empresas recaudar capital y a los inversionistas participar en el crecimiento económico.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 7 -->
+            <div class="question" id="question7">
+                <h3>7. ¿Qué es la ley de rendimientos decrecientes?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(7, 1)">A) Una ley que establece que los impuestos deben disminuir con el tiempo</div>
+                    <div class="option" onclick="checkAnswer(7, 2)">B) Un principio que establece que las empresas siempre ganan menos cada año</div>
+                    <div class="option" onclick="checkAnswer(7, 3)">C) Una teoría que afirma que añadir más factores de producción, manteniendo al menos uno fijo, eventualmente resulta en incrementos menores en la producción</div>
+                    <div class="option" onclick="checkAnswer(7, 4)">D) Una regla que indica que el valor del dinero disminuye con el tiempo</div>
+                </div>
+                <div class="explanation" id="explanation7">
+                    <strong>Respuesta correcta: C) Una teoría que afirma que añadir más factores de producción, manteniendo al menos uno fijo, eventualmente resulta en incrementos menores en la producción</strong>
+                    <p>La ley de rendimientos decrecientes es un principio económico que establece que si se incrementa un factor de producción (como la mano de obra) mientras otros factores (como el capital o la tierra) permanecen constantes, llegará un punto en el que cada unidad adicional del factor variable generará un aumento menor en la producción total. Por ejemplo, en una fábrica con un espacio limitado, añadir más trabajadores eventualmente causará congestión y disminuirá la eficiencia marginal de cada trabajador adicional.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 8 -->
+            <div class="question" id="question8">
+                <h3>8. ¿Qué son los bienes públicos en economía?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(8, 1)">A) Productos fabricados por empresas estatales</div>
+                    <div class="option" onclick="checkAnswer(8, 2)">B) Bienes que son no rivales y no excluyentes en su consumo</div>
+                    <div class="option" onclick="checkAnswer(8, 3)">C) Propiedades y edificios que pertenecen al gobierno</div>
+                    <div class="option" onclick="checkAnswer(8, 4)">D) Bienes que son subsidiados por el estado</div>
+                </div>
+                <div class="explanation" id="explanation8">
+                    <strong>Respuesta correcta: B) Bienes que son no rivales y no excluyentes en su consumo</strong>
+                    <p>Los bienes públicos en economía son aquellos que cumplen dos características principales: son no rivales (el consumo por parte de una persona no reduce la disponibilidad para otros) y no excluyentes (es difícil o imposible impedir que alguien los use). Ejemplos clásicos de bienes públicos incluyen la defensa nacional, los faros marítimos, el aire limpio y el conocimiento público. Debido a estas características, los bienes públicos suelen ser proporcionados por el gobierno, ya que el mercado privado tendría dificultades para ofrecerlos eficientemente debido al problema del "polizón" (free rider).</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 9 -->
+            <div class="question" id="question9">
+                <h3>9. ¿Qué es la elasticidad precio de la demanda?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(9, 1)">A) La capacidad de un producto para estirarse</div>
+                    <div class="option" onclick="checkAnswer(9, 2)">B) La medida en que la cantidad demandada responde a un cambio en el precio</div>
+                    <div class="option" onclick="checkAnswer(9, 3)">C) La velocidad con que un producto se vende en el mercado</div>
+                    <div class="option" onclick="checkAnswer(9, 4)">D) El margen de beneficio que obtienen los productores</div>
+                </div>
+                <div class="explanation" id="explanation9">
+                    <strong>Respuesta correcta: B) La medida en que la cantidad demandada responde a un cambio en el precio</strong>
+                    <p>La elasticidad precio de la demanda es un concepto económico que mide la sensibilidad o respuesta de la cantidad demandada de un bien o servicio ante cambios en su precio. Se calcula como el porcentaje de cambio en la cantidad demandada dividido por el porcentaje de cambio en el precio. Si la elasticidad es mayor que 1 (en valor absoluto), la demanda es elástica, lo que significa que los consumidores son muy sensibles a los cambios de precio. Si es menor que 1, la demanda es inelástica, indicando que los consumidores son menos sensibles a las variaciones de precio.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 10 -->
+            <div class="question" id="question10">
+                <h3>10. ¿Qué es el costo de oportunidad?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(10, 1)">A) El costo adicional de producir una unidad más de un bien</div>
+                    <div class="option" onclick="checkAnswer(10, 2)">B) El costo total de producción dividido por el número de unidades producidas</div>
+                    <div class="option" onclick="checkAnswer(10, 3)">C) El valor de la mejor alternativa no elegida al tomar una decisión</div>
+                    <div class="option" onclick="checkAnswer(10, 4)">D) El costo de establecer un nuevo negocio</div>
+                </div>
+                <div class="explanation" id="explanation10">
+                    <strong>Respuesta correcta: C) El valor de la mejor alternativa no elegida al tomar una decisión</strong>
+                    <p>El costo de oportunidad es un concepto económico que se refiere al valor o beneficio que se renuncia al elegir una opción sobre otra. Representa lo que se podría haber obtenido si se hubiera tomado la mejor alternativa disponible. Este concepto es fundamental en la toma de decisiones económicas, ya que reconoce que los recursos son limitados y que elegir una alternativa implica renunciar a otras. Por ejemplo, el costo de oportunidad de ir a la universidad podría incluir el salario que se habría ganado si en lugar de estudiar se hubiera trabajado a tiempo completo.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 11 -->
+            <div class="question" id="question11">
+                <h3>11. ¿Qué es la balanza comercial?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(11, 1)">A) La diferencia entre exportaciones e importaciones de un país</div>
+                    <div class="option" onclick="checkAnswer(11, 2)">B) El balance total de las finanzas públicas</div>
+                    <div class="option" onclick="checkAnswer(11, 3)">C) El saldo en efectivo que tiene un país</div>
+                    <div class="option" onclick="checkAnswer(11, 4)">D) La cantidad de oro que posee un país</div>
+                </div>
+                <div class="explanation" id="explanation11">
+                    <strong>Respuesta correcta: A) La diferencia entre exportaciones e importaciones de un país</strong>
+                    <p>La balanza comercial es un indicador económico que registra la diferencia entre el valor de las exportaciones e importaciones de bienes y servicios de un país durante un período determinado. Si las exportaciones superan a las importaciones, existe un superávit comercial; si las importaciones superan a las exportaciones, existe un déficit comercial. Este indicador es parte de la balanza de pagos de un país y refleja el grado de competitividad de su economía en el mercado internacional.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 12 -->
+            <div class="question" id="question12">
+                <h3>12. ¿Qué es el tipo de cambio?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(12, 1)">A) El precio de la moneda extranjera en términos de la moneda nacional</div>
+                    <div class="option" onclick="checkAnswer(12, 2)">B) La tasa que cobran los bancos por cambiar dinero</div>
+                    <div class="option" onclick="checkAnswer(12, 3)">C) El valor del oro en diferentes países</div>
+                    <div class="option" onclick="checkAnswer(12, 4)">D) El porcentaje que cobra el estado por transacciones internacionales</div>
+                </div>
+                <div class="explanation" id="explanation12">
+                    <strong>Respuesta correcta: A) El precio de la moneda extranjera en términos de la moneda nacional</strong>
+                    <p>El tipo de cambio es el precio relativo de una divisa respecto a otra, es decir, cuántas unidades de una moneda se necesitan para adquirir una unidad de otra moneda. Los tipos de cambio pueden ser fijos (establecidos por el gobierno) o flotantes (determinados por el mercado de divisas). Fluctuaciones en el tipo de cambio afectan directamente el comercio internacional, el valor de las inversiones extranjeras y la competitividad de las exportaciones de un país.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 13 -->
+            <div class="question" id="question13">
+                <h3>13. ¿Qué es la política fiscal?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(13, 1)">A) Las decisiones del banco central sobre las tasas de interés</div>
+                    <div class="option" onclick="checkAnswer(13, 2)">B) El conjunto de medidas relacionadas con los impuestos y el gasto público</div>
+                    <div class="option" onclick="checkAnswer(13, 3)">C) Las políticas de comercio internacional</div>
+                    <div class="option" onclick="checkAnswer(13, 4)">D) La regulación de los precios en el mercado</div>
+                </div>
+                <div class="explanation" id="explanation13">
+                    <strong>Respuesta correcta: B) El conjunto de medidas relacionadas con los impuestos y el gasto público</strong>
+                    <p>La política fiscal se refiere a las decisiones que toma un gobierno respecto a sus niveles de gasto e impuestos para influir en la economía. Es una herramienta de política económica que, junto con la política monetaria, se utiliza para estabilizar la economía. Una política fiscal expansiva (aumento del gasto público o reducción de impuestos) busca estimular la economía durante recesiones, mientras que una política fiscal contractiva (reducción del gasto o aumento de impuestos) intenta controlar la inflación durante períodos de crecimiento excesivo.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 14 -->
+            <div class="question" id="question14">
+                <h3>14. ¿Qué es la política monetaria?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(14, 1)">A) Las decisiones sobre el presupuesto nacional</div>
+                    <div class="option" onclick="checkAnswer(14, 2)">B) El control de los precios de los productos básicos</div>
+                    <div class="option" onclick="checkAnswer(14, 3)">C) Las acciones del banco central para controlar la oferta monetaria y las tasas de interés</div>
+                    <div class="option" onclick="checkAnswer(14, 4)">D) La distribución de subsidios a los sectores económicos</div>
+                </div>
+                <div class="explanation" id="explanation14">
+                    <strong>Respuesta correcta: C) Las acciones del banco central para controlar la oferta monetaria y las tasas de interés</strong>
+                    <p>La política monetaria comprende las decisiones y acciones que toma el banco central de un país para regular la cantidad de dinero en circulación y las tasas de interés con el objetivo de lograr estabilidad de precios, pleno empleo y crecimiento económico. Los instrumentos principales de la política monetaria incluyen las operaciones de mercado abierto, la tasa de interés de referencia y los requisitos de reserva para los bancos comerciales. Una política monetaria expansiva busca estimular la economía reduciendo las tasas de interés, mientras que una política monetaria restrictiva busca combatir la inflación aumentando dichas tasas.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 15 -->
+            <div class="question" id="question15">
+                <h3>15. ¿Qué es la externalidad en economía?</h3>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(15, 1)">A) El comercio entre diferentes países</div>
+                    <div class="option" onclick="checkAnswer(15, 2)">B) Un efecto secundario de una actividad económica que afecta a terceros sin compensación</div>
+                    <div class="option" onclick="checkAnswer(15, 3)">C) El nivel de dependencia de una economía respecto al exterior</div>
+                    <div class="option" onclick="checkAnswer(15, 4)">D) La deuda que un país tiene con instituciones internacionales</div>
+                </div>
+                <div class="explanation" id="explanation15">
+                    <strong>Respuesta correcta: B) Un efecto secundario de una actividad económica que afecta a terceros sin compensación</strong>
+                    <p>Una externalidad en economía ocurre cuando la producción o consumo de un bien o servicio genera un impacto en terceros que no participan directamente en esa transacción, y dicho impacto no se refleja en el precio de mercado. Pueden ser positivas (beneficios no compensados, como cuando alguien cultiva un jardín que embellece el vecindario) o negativas (costos no compensados, como la contaminación industrial). Las externalidades representan una forma de fallo de mercado que puede justificar la intervención gubernamental mediante regulaciones, impuestos o subsidios para corregir estas ineficiencias.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="result" style="display: none;">
+            <div class="result-message">¡Has completado el juego!</div>
+            <p class="score-container">Tu puntuación: <span id="score">0</span>/15</p>
+            <div id="finalMessage"></div>
+            <button class="btn" onclick="resetGame()">Jugar de nuevo</button>
+        </div>
+
+        <div class="score-container">
+            Puntuación: <span id="currentScore">0</span>/15
+        </div>
+        
+        <button class="btn" id="nextBtn" style="display: none;" onclick="nextQuestion()">Siguiente pregunta</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
