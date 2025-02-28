@@ -11,6 +11,19 @@ const preguntas = [
         respuesta: 0,
         explicacion: "La macroeconomía analiza la economía de un país como un todo, sumando todas las ofertas y demandas, a diferencia de la microeconomía, que se enfoca en decisiones y mercados particulares."
     },
+explicación: "El PIB es la medida del valor de mercado de todos los bienes y servicios finales producidos en el interior de un país durante un período (normalmente un año). Es un indicador clave del tamaño de la economía."
+    },
+    {
+      pregunta: "¿Cuál de las siguientes actividades NO se incluye normalmente en el cálculo del PIB?",
+      opciones: [
+        "El trabajo doméstico no remunerado realizado dentro del hogar",
+        "La producción manufacturera vendida en mercados formales",
+        "La prestación de servicios profesionales declarados",
+        "La inversión pública en infraestructura"
+      ],
+      respuesta: 0,
+      explicación: "El PIB solo contabiliza bienes y servicios producidos y vendidos legalmente en mercados. Las tareas domésticas que no pasan por el mercado (autoconsumo) no se contabilizan. Por otro lado, la producción ilegal (economía sumergida) en España no se incluía antes de 2014, pero tras ese año se estima y añade según normativa europea."
+    }, 
     {
         pregunta: "¿Cuál de los siguientes NO es un objetivo macroeconómico principal de un país?",
         opciones: [
